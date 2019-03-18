@@ -1,12 +1,3 @@
-/*    font-family: 'Open Sans', sans-serif;
-
-    font-family: 'Montserrat', sans-serif;
-
-    font-family: 'Mr De Haviland', cursive;
-
-    font-family: 'Italianno', cursive;
-*/
-
 * {
    box-sizing: border-box;
 }
@@ -71,6 +62,11 @@ li {
    margin: 0 auto;
 }
 
+.header__logo {
+   margin-left: 25px;
+   margin-right: 25px;
+}
+
 .menu--btn {
    color: #fff;
    display: none;
@@ -98,18 +94,6 @@ li {
    font-size: 11px;
    letter-spacing: 1px;
    color: rgba(255, 255, 255, .9);
-}
-
-.header--to-book {
-   font-family: 'Montserrat', sans-serif;
-   font-weight: 700;
-   margin-left: 40px;
-   letter-spacing: 1px;
-   font-size: 12px;
-   text-transform: uppercase;
-   color: #fff;
-   background-color: #8b755a;
-   padding: 18px 25px;
 }
 
 .top {
@@ -173,11 +157,6 @@ li {
    background-position: top center;
    background-repeat: no-repeat;
    background-size: cover;
-   height: 100vh;
-}
-
-.top--item-fon {
-   background-color: rgba(0, 0, 0, .55);
    height: 100vh;
 }
 
@@ -266,79 +245,30 @@ li {
    z-index: 110;
 }
 
-
-
-
-
-
-
-
-
 .menu--block {
    min-height: 345px;
    display: flex;
    justify-content: space-between;
+   flex-wrap: wrap;
 }
 
-
-
 .menu-block-left {
-   background-image: url(../img/block-left.jpg);
+   background-image: url(../img/block-right.jpg);
    background-repeat: no-repeat;
    width: 570px;
    height: 344px;
 
-}
-
-.menu-block-info {
-   padding: 70px 90px 100px 70px;
-   background-color: #fff;
-   max-width: 595px;
-   color: #232323;
-}
-
-.menu-block-title {
-   line-height: 50px;
-   font-size: 24px;
-   font-weight: 700;
-   font-family: 'Montserrat', sans-serif;
-   text-transform: uppercase;
-   margin-bottom: 10px;
 }
 
 .menu--blockk-text {
    margin-bottom: 40px;
 }
 
-.menu--block-autor {
-   font-family: 'Mr De Haviland', cursive;
-   font-size: 48px;
-}
-
-.menu--block-link {
-   font-family: 'Montserrat', sans-serif;
-   font-size: 12px;
-   letter-spacing: 1px;
-   color: #8b755a;
-   border-bottom: 2px solid #8b755a;
-   font-weight: bold;
-   text-transform: uppercase;
-}
-
 .menu-block-right {
-   background-image: url(../img/block-right.jpg);
+   background-image: url(../img/block-left.jpg);
    background-repeat: no-repeat;
    width: 570px;
    height: 344px;
-}
-
-.menu-block-right .menu-block-info {
-   float: right;
-}
-
-.blog {
-   padding: 115px 0;
-   text-align: center;
 }
 
 .blog--subtitle {
@@ -375,61 +305,58 @@ li {
    background-color: #8b755a;
 }
 
-.blog--items {
+.wrapper {
+   position: relative;
+   min-height: 644px;
+   background-image: url(../img/parallax-img.jpg);
+   background-position: top center;
+   background-repeat: no-repeat;
+}
+
+.parallax--text {
+   font-family: 'Italianno', cursive;
+   font-size: 95px;
+   line-height: 50px;
+   color: #fff;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-51%, -50%)
+}
+
+.wraper--menu {
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
 }
 
-.blog--item {
-   max-width: 375px;
+.block--menu {
+   width: 360px;
+   max-height: 50px;
+   margin-bottom: 60px;
 }
 
-.blog--item-title {
-   margin-top: 30px;
-   line-height: 50px;
+.menu--name-dish {
+   font-family: 'Montserrat', sans-serif;
    font-size: 16px;
-   color: #232323;
-   text-transform: uppercase;
-   font-weight: 700;
+   font-weight: bold;
+   color: #000;
+}
+
+.menu--dish-cost {
    font-family: 'Montserrat', sans-serif;
+   font-size: 16px;
+   font-weight: normal;
+   padding-left: 12px;
+   float: right;
+   color: #000;
 }
 
-.blog--item-suptitle {
-   font-family: Georgia;
-   color: #a7a7a7;
-}
-
-.blog--item-suptitle a {
-   font-family: Georgia;
-   font-size: 12px;
-   color: #a7a7a7;
-   font-style: italic;
-   letter-spacing: 0.5px;
-}
-
-.blog--expert {
+.menu--dish-title {
+   font-family: 'Open Sans', sans-serif;
    font-size: 14px;
-   margin: 10px 0;
-   padding: 0 10px;
-}
-
-.blog--link {
-   font-size: 12px;
-   color: #8b755a;
-   font-family: 'Montserrat', sans-serif;
-}
-
-.blog--link:after {
-   content: "\f105";
-
-}
-
-.blog--lin::after {
-   content: "\f178";
-   font-family: 'icomoon';
-   margin-left: 20px;
-   vertical-align: bottom;
+   margin: 0;
+   padding: 0;
 }
 
 .footer {
@@ -452,8 +379,6 @@ li {
 .footer--info-contact a {
    color: #bcbcbc;
 }
-
-
 
 .footer--social {
    display: flex;
@@ -491,24 +416,11 @@ li {
    font-size: 17px;
 }
 
-
-
-
-
-.footer--instagram-images img {
-   margin-bottom: 8px;
-}
-
 .footer--copy {
    display: flex;
    justify-content: center;
    font-size: 12px;
    color: #545454;
-}
-
-.header__logo {
-   margin-left: 25px;
-   margin-right: 25px;
 }
 
 .fish--image {
@@ -520,62 +432,3 @@ li {
 .slash {
    padding: 0 5px;
 }
-
-.wrapper {
-   position: relative;
-   min-height: 644px;
-   background-image: url(../img/parallax-img.jpg);
-   background-position: top center;
-   background-repeat: no-repeat;
-}
-
-.top--item-fon-footer {
-   background-color: rgba(0, 0, 0, .55);
-   height: 68.2vh;
-}
-
-.parallax--text {
-   font-family: 'Italianno', cursive;
-   font-size: 95px;
-   line-height: 50px;
-   color: #fff;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-51%, -50%)
-}   
-.wraper--menu {
-display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
-}
-
-.block--menu {
-   width: 360px;
-   max-height: 50px;
-   margin-bottom: 60px;
-}
-
-.menu--name-dish {
-   font-family: 'Montserrat', sans-serif;
-   font-size: 16px;
-   font-weight: bold;
-
-}
-
-.menu--dish-cost {
-   font-family: 'Montserrat', sans-serif;
-   font-size: 16px;
-   font-weight: normal;
-   padding-left: 12px;
-   float: right;
-      color: #000;
-}
-
-.menu--dish-title {
-   font-family: 'Open Sans', sans-serif;
-   font-size: 14px;
-   margin: 0;
-   padding: 0;
-}
-
